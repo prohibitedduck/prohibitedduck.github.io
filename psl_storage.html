@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>localStorage Read – github.io</title>
+</head>
+<body>
+  <h1>localStorage Read: github.io</h1>
+
+  <p id="output"></p>
+
+  <script>
+    const token = localStorage.getItem("auth_token");
+    document.getElementById("output").innerText =
+      "Read Token: " + (token ?? "(none)");
+  </script>
+</body>
+</html>
